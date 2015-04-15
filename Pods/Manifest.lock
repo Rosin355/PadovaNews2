@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (2.5.2):
+    - AFNetworking/NSURLConnection (= 2.5.2)
+    - AFNetworking/NSURLSession (= 2.5.2)
+    - AFNetworking/Reachability (= 2.5.2)
+    - AFNetworking/Security (= 2.5.2)
+    - AFNetworking/Serialization (= 2.5.2)
+    - AFNetworking/UIKit (= 2.5.2)
+  - AFNetworking/NSURLConnection (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.2)
+  - AFNetworking/Security (2.5.2)
+  - AFNetworking/Serialization (2.5.2)
+  - AFNetworking/UIKit (2.5.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ARChromeActivity (1.0.2)
+  - KINWebBrowser (1.1.0):
+    - ARChromeActivity (= 1.0.2)
+    - TUSafariActivity (= 1.0.2)
+  - MWFeedParser (1.0.1):
+    - MWFeedParser/FeedParser (= 1.0.1)
+    - MWFeedParser/NSDate+InternetDateTime (= 1.0.1)
+    - MWFeedParser/NSString+HTML (= 1.0.1)
+  - MWFeedParser/FeedParser (1.0.1):
+    - MWFeedParser/NSDate+InternetDateTime
+    - MWFeedParser/NSString+HTML
+  - MWFeedParser/NSDate+InternetDateTime (1.0.1)
+  - MWFeedParser/NSString+HTML (1.0.1)
+  - TUSafariActivity (1.0.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KINWebBrowser
+  - MWFeedParser
+
+SPEC CHECKSUMS:
+  AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
+  ARChromeActivity: 6488aedc8dd0624b103ea8caf6218e52692aaf77
+  KINWebBrowser: 6aeaf6f34a99ed31a49eebf5457581718f08961e
+  MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
+  TUSafariActivity: 32e3e5dc9123e5533a42d41e1c3246d12911a4a2
+
+COCOAPODS: 0.36.3

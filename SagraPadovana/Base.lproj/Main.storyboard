@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XPs-C1-KC9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--PadovaNews-->
+        <scene sceneID="MyK-6e-XGt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="9bx-G9-LoR" customClass="FeedTableViewController" customModule="PadovaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="33w-pD-z5l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="S1G-ag-cXh" customClass="FeedTableViewCell" customModule="PadovaNews" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S1G-ag-cXh" id="NoZ-0V-h9S">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="uGu-Tf-L2f">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="BXu-cf-e7e"/>
+                                                <constraint firstAttribute="height" constant="100" id="eaj-iL-kpq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-wB-PrL">
+                                            <rect key="frame" x="108" y="8" width="484" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCW-8j-suc">
+                                            <rect key="frame" x="108" y="37" width="484" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="54" id="iWg-A3-nNm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TiE-wB-PrL" firstAttribute="leading" secondItem="uGu-Tf-L2f" secondAttribute="trailing" constant="8" id="2Ud-C4-oK3"/>
+                                        <constraint firstItem="TiE-wB-PrL" firstAttribute="top" secondItem="NoZ-0V-h9S" secondAttribute="topMargin" id="7Id-uB-s11"/>
+                                        <constraint firstItem="uGu-Tf-L2f" firstAttribute="leading" secondItem="NoZ-0V-h9S" secondAttribute="leadingMargin" constant="-8" id="Cit-Rr-MQf"/>
+                                        <constraint firstItem="TiE-wB-PrL" firstAttribute="trailing" secondItem="NoZ-0V-h9S" secondAttribute="trailingMargin" id="Mdk-m2-5w8"/>
+                                        <constraint firstItem="eCW-8j-suc" firstAttribute="leading" secondItem="uGu-Tf-L2f" secondAttribute="trailing" constant="8" id="bbZ-Pe-dhe"/>
+                                        <constraint firstItem="eCW-8j-suc" firstAttribute="top" secondItem="TiE-wB-PrL" secondAttribute="bottom" constant="8" id="fgn-B4-2mb"/>
+                                        <constraint firstItem="uGu-Tf-L2f" firstAttribute="top" secondItem="NoZ-0V-h9S" secondAttribute="topMargin" constant="-8" id="nkB-OR-Utv"/>
+                                        <constraint firstItem="eCW-8j-suc" firstAttribute="trailing" secondItem="NoZ-0V-h9S" secondAttribute="trailingMargin" id="ybt-WS-35S"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="ItemAuthorLabel" destination="TiE-wB-PrL" id="hyh-a6-rKw"/>
+                                    <outlet property="ItemImageView" destination="uGu-Tf-L2f" id="V4w-Qm-zUj"/>
+                                    <outlet property="ItemTitleLabel" destination="eCW-8j-suc" id="ces-16-Ev4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9bx-G9-LoR" id="BO0-zr-vBt"/>
+                            <outlet property="delegate" destination="9bx-G9-LoR" id="RBT-m0-HbH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PadovaNews" id="BBo-Up-IQp">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="LzD-Sb-jMs"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33s-8U-Ina" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1229" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wNW-Iv-6L1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPs-C1-KC9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v8z-dV-CGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9bx-G9-LoR" kind="relationship" relationship="rootViewController" id="oth-4n-Dvv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QuA-hU-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="512" height="512"/>
+    </resources>
 </document>
