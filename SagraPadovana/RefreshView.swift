@@ -59,7 +59,7 @@ class RefreshView: UIView {
 
   func setupRefreshItems() {
     let groundImageView = UIImageView(image: UIImage(named: "ground"))
-    let buildingsImageView = UIImageView(image: UIImage(named: "buildings"))
+    let buildingsImageView = UIImageView(image: UIImage(named: "padova"))
     let sunImageView = UIImageView(image: UIImage(named: "sun"))
     let catImageView = UIImageView(image: UIImage(named: "cat"))
     let capeBackImageView = UIImageView(image: UIImage(named: "cape_back"))

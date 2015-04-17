@@ -69,7 +69,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="PadovaNews" id="BBo-Up-IQp">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="LzD-Sb-jMs"/>
+                        <barButtonItem key="rightBarButtonItem" image="Fill 72" id="LzD-Sb-jMs"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33s-8U-Ina" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,6 +96,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fill 72" width="32" height="32"/>
         <image name="placeholder" width="512" height="512"/>
     </resources>
 </document>

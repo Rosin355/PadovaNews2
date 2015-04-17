@@ -88,6 +88,21 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
         refreshView.scrollViewDidScroll(scrollView)
     }
     
+    // ** FOR APPLE DTS ----> CAN'T IMPLEMENT THIS METHOD GIVES ME ERROR.
+    
+//    override func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//        refreshView.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+//    }
+//}
+//
+//extension FeedTableViewController: RefreshViewDelegate {
+//    func refreshViewDidRefresh(refreshView: RefreshView) {
+//        delayBySeconds(3) {
+//            self.refreshView.endRefreshing()
+//        }
+//    }
+//}
+
 
 
     override func viewWillAppear(animated: Bool) {
