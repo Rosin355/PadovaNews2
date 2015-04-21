@@ -27,17 +27,17 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-wB-PrL">
-                                            <rect key="frame" x="108" y="8" width="484" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <rect key="frame" x="108" y="8" width="484" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCW-8j-suc">
-                                            <rect key="frame" x="108" y="37" width="484" height="54"/>
+                                            <rect key="frame" x="108" y="40" width="484" height="54"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="54" id="iWg-A3-nNm"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -69,7 +69,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="PadovaNews" id="BBo-Up-IQp">
-                        <barButtonItem key="rightBarButtonItem" image="Fill 72" id="LzD-Sb-jMs"/>
+                        <barButtonItem key="rightBarButtonItem" image="info" id="LzD-Sb-jMs"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33s-8U-Ina" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,7 +96,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Fill 72" width="32" height="32"/>
+        <image name="info" width="24" height="24"/>
         <image name="placeholder" width="512" height="512"/>
     </resources>
 </document>

@@ -90,11 +90,11 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
     // ** FOR APPLE DTS ----> CAN'T IMPLEMENT THIS METHOD GIVES ME ERROR.
     
-//    override func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//        refreshView.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
-//    }
-//}
-//
+    override func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        refreshView.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+    }
+
+
 //extension FeedTableViewController: RefreshViewDelegate {
 //    func refreshViewDidRefresh(refreshView: RefreshView) {
 //        delayBySeconds(3) {
@@ -108,10 +108,11 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         request(nil)
+        
     }
-
-
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -194,4 +195,11 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
 }
 
+extension FeedTableViewController: RefreshViewDelegate {
+    func refreshViewDidRefresh(refreshView: RefreshView) {
+        delayBySeconds(3) {
+            self.refreshView.endRefreshing()
+        }
+    }
+}
 
